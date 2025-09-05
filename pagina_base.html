@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mi Blog Personal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --b:#ddd; --max:900px; }
+    body { font-family: system-ui, sans-serif; max-width: var(--max); margin: 2rem auto; line-height: 1.5; }
+    header, nav, main, aside, article, footer { padding: 12px; border: 1px solid var(--b); margin-bottom: 12px; }
+    nav a { margin-right: 8px; }
+    .label { font-weight: bold; }
+    .date { color: #666; }
+    blockquote { margin: 0 0 1rem 0; padding-left: 1rem; border-left: 4px solid var(--b); font-style: italic; }
+    footer p { margin: 0.25rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mi Blog Personal</h1>
+    <nav aria-label="Navegación principal">
+      <a href="#">Inicio</a>
+      <a href="#">Artículos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <article aria-labelledby="post-title">
+      <header>
+        <h2 id="post-title">Novedades de HTML5</h2>
+        <p class="date">Publicado el <time datetime="2024-12-20">20/12/2024</time></p>
+      </header>
+
+      <p>HTML5 trae nuevas etiquetas <em>muy interesantes</em> para mejorar la web.</p>
+
+      <blockquote>
+        “a uniquely portable magic”
+        <cite> — Stephen King</cite>
+      </blockquote>
+
+      <p>
+        <span class="label">Sitio relacionado:</span>
+        <a href="https://www.example.com">Example.com</a>
+      </p>
+
+      <p>
+        Visita a la
+        <abbr title="World Health Organization">WHO</abbr>
+        para más información.
+      </p>
+    </article>
+  </main>
+
+  <aside aria-labelledby="about contacto">
+    <section aria-labelledby="about">
+      <h2 id="about">Acerca de</h2>
+      <p>Desarrollador web y escritor ocasional.</p>
+    </section>
+
+    <section aria-labelledby="contacto">
+      <h2 id="contacto">Contacto</h2>
+      <address>
+        Email: <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+      </address>
+    </section>
+  </aside>
+
+  <footer>
+    <p>© <time datetime="2025">2025</time> Mi Sitio</p>
+    <p>Hecho con <em>café</em> y paciencia.</p>
+  </footer>
+</body>
+</html>
